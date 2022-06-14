@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="selectoption.radiobutton.Controller">
+   <children>
+      <RadioButton fx:id="rButton1" layoutX="26.0" layoutY="296.0" mnemonicParsing="false" onAction="#getFood" text="Pizza">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="food" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rButton2" layoutX="249.0" layoutY="296.0" mnemonicParsing="false" onAction="#getFood" text="Sushi" toggleGroup="$food">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rButton3" layoutX="452.0" layoutY="296.0" mnemonicParsing="false" onAction="#getFood" text="Ramen" toggleGroup="$food">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="myLabel" alignment="CENTER" layoutY="134.0" prefHeight="28.0" prefWidth="594.0" text="Choose the food what you want to eat!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
